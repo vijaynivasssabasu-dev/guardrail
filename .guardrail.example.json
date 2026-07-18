@@ -1,0 +1,4 @@
+{
+  "highRiskWords": ["password", "auth", "token", "secret", "drop table"],
+  "ignoreDirectories": ["dist", "generated"]
+}

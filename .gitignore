@@ -1,0 +1,9 @@
+.next
+node_modules
+.env
+*.log
+build-temp
+release-check
+work
+tsconfig.tsbuildinfo
+capture_demo.py
