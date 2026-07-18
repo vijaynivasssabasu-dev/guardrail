@@ -1,0 +1,29 @@
+name: Unpack Guardrail source
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - guardrail-source.zip
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract source archive
+        run: |
+          rm -rf .guardrail-staging
+          unzip -q guardrail-source.zip -d .guardrail-staging
+          cp -a .guardrail-staging/. .
+          rm -rf .guardrail-staging guardrail-source.zip
+      - name: Commit source tree
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Unpack Guardrail source"
+          git push
