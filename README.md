@@ -2,9 +2,20 @@
 
 Guardrail is a local-first web application for reviewing AI-generated code changes before a developer accepts them. Paste a unified diff or upload a `.diff` or `.patch` file, inspect the risky hunks, ask focused questions, and acknowledge every flagged change before recording an approval.
 
+## Live App
+
+https://guardrail-ebon.vercel.app
+
 ## Suggested Hackathon Category
 
 Developer Tools / Apps for Your Life
+
+## Team
+
+- Laxmi Vijay Nivass
+- Pasumarthi Harish Babu
+- Shanmukh
+- Satwik
 
 ## What It Does
 
@@ -80,3 +91,4 @@ npm run build
 ## License
 
 This project is released under the [MIT License](LICENSE).
+
