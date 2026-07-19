@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Guardrail",
+  title: "Humanic Code",
   description: "A trust layer for AI-generated code changes"
 };
 
@@ -29,3 +29,4 @@ export default function RootLayout({
     </html>
   );
 }
+
