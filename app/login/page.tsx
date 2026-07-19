@@ -37,7 +37,7 @@ export default function LoginPage() {
         <div className="flex h-10 w-10 items-center justify-center rounded bg-ink text-white">
           <ShieldCheck className="h-5 w-5" aria-hidden="true" />
         </div>
-        <h1 className="mt-5 text-2xl font-bold text-ink">Sign in to Guardrail</h1>
+        <h1 className="mt-5 text-2xl font-bold text-ink">Sign in to Humanic Code</h1>
         <p className="mt-2 text-sm text-slate-600">Set your review profile to continue.</p>
 
         <form className="mt-6 space-y-5" onSubmit={submit}>
@@ -78,3 +78,4 @@ export default function LoginPage() {
     </main>
   );
 }
+
