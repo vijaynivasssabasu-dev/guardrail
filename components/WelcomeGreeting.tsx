@@ -46,7 +46,7 @@ export function WelcomeGreeting() {
         }
       } catch (error) {
         if ((error as Error).name !== "AbortError") {
-          console.warn("Guardrail AI welcome is unavailable.", error);
+          console.warn("Humanic Code AI welcome is unavailable.", error);
         }
       }
     }
@@ -64,10 +64,11 @@ export function WelcomeGreeting() {
       <div className="flex items-start gap-3">
         <BotMessageSquare className="mt-0.5 h-5 w-5 shrink-0 text-emerald-700" aria-hidden="true" />
         <div>
-          <p className="text-xs font-semibold uppercase text-emerald-800">Guardrail Assistant</p>
+          <p className="text-xs font-semibold uppercase text-emerald-800">Humanic Code Assistant</p>
           <p className="mt-1 text-lg font-bold text-emerald-950">{greeting}</p>
         </div>
       </div>
     </section>
   );
 }
+
