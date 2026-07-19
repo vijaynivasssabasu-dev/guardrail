@@ -25,12 +25,12 @@ export function AppHeader() {
   return (
     <header className="border-b border-line bg-white/80 backdrop-blur">
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex min-w-0 items-center gap-3">
-          <span className="grid h-9 w-9 shrink-0 place-items-center rounded bg-ink text-sm font-bold text-white">G</span>
-          <span className="min-w-0">
-            <span className="block text-base font-semibold leading-5">Guardrail</span>
-            <span className="block truncate text-xs text-slate-500">Trust layer for AI code</span>
-          </span>
+        <Link href="/" className="flex min-w-0 items-center">
+          <img
+            src="/guardrail-logo-header.png"
+            alt="Guardrail"
+            className="h-11 w-auto shrink-0 sm:h-12"
+          />
         </Link>
         <div className="flex items-center gap-1 text-sm font-medium">
           {profile ? (
